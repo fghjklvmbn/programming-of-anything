@@ -1,8 +1,9 @@
     #include <stdio.h>
 
     int main(void) {
-        char test = "a";
+        char test = 'a';
         char key = 0xff;
+
         char encrypt_word;
         char unencrypt_word;
 
