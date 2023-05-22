@@ -10,6 +10,6 @@ int main() {
     printf("\npassword : ____\b\b\b\b");
     scanf("%d", &pass);
 
-    printf("입력하신 아이디는 %d 이며, 비밀번호는 %d 입니다.", id, pass);
+    printf("입력하신 아이디는 \"%d\" 이며, 비밀번호는 \"%d\" 입니다.", id, pass);
     return 0;
 }
