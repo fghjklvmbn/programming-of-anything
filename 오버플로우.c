@@ -1,6 +1,7 @@
 #include <stdio.h>
-#include <limits.h>
 
+/*
+#include <limits.h>
 //오버플로우 테스트
 int main(void) {
     //최댓값 초기화
@@ -12,5 +13,13 @@ int main(void) {
 
     printf("%d\n", a);
     printf("%d\n", b);
+    return 0;
+}
+*/
+
+int main(void) {
+    float x = 1e39;
+    printf("x = %e\n", x);
+    
     return 0;
 }
