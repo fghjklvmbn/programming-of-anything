@@ -3,11 +3,12 @@
 #include<stdlib.h>
 
 int main(){
-    int T;
+    int T =0;
     int x1, x2, y1, y2;
     int r1, r2;
     int i, a;
     double d;
+	int sum[T];
 
     scanf("%d", &T);
 
@@ -19,27 +20,20 @@ int main(){
     //    if (i==T){
     //     break;
     //    }
-
-    }
-
-    // 위에서 얻은 값으로 원의 중심 값 계산과정
+	// 위에서 얻은 값으로 원의 중심 값 계산과정
     // 거리 제곱(계산)
     d = sqrt(pow(x1-x2, 2)+pow(y1-y2, 2));
 
     if(x2==x1 && y1==y2) {
         if(r1==r2) {return -1; } // 무한대일 경우 -1로 변환
         else { return 0; }
-    } else if ((r1==r2)<d && abs(r1-r2)<d) { return 2;} // 교점이 2개일 경우
-    else if ((r1+r2)==d && abs(r1+r2)<d){ return 1;} // 교점이 1개일 경우
-    else { return 0; }
-
-    for (a = 0; a < T; a++)
-    {
-        int num1;
-        num1 = main();
-        printf("%d\n", num1);
-        return 0;
+    	} else if ((r1==r2)<d && abs(r1-r2)<d) { return 2;} // 교점이 2개일 경우
+    	else if ((r1+r2)==d && abs(r1+r2)<d){ return 1;} // 교점이 1개일 경우
+    	else { return 0; }
+		sum[T] = main();
     }
+	printf("%d", sum[T]);
+	return 0;
     
 }
 /* 테스트중
