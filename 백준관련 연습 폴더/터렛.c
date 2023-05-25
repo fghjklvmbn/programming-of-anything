@@ -3,36 +3,46 @@
 #include<stdlib.h>
 
 int main(){
-    int T =0;
+    int T;
     int x1, x2, y1, y2;
     int r1, r2;
     int i, a;
+	int b[T], c, g, e, f;
     double d;
-	int sum[T];
 
     scanf("%d", &T);
 
     for (i = 0; i <T; i++)
     {
-        scanf("%d %d %d", &x1, &y1, &r1);
-        scanf("%d %d %d", &x2, &y2, &r2);
+        scanf("%d %d %d %d %d %d", &x1, &y1, &r1, &x2, &y2, &r2);
     //    정상적으로 입력 받아짐
     //    if (i==T){
     //     break;
     //    }
 	// 위에서 얻은 값으로 원의 중심 값 계산과정
+		d = sqrt(pow(x1-x2, 2)+pow(y1-y2, 2));
     // 거리 제곱(계산)
-    d = sqrt(pow(x1-x2, 2)+pow(y1-y2, 2));
+		if(x2==x1 && y1==y2) {
+    	if(r1==r2) { b[T] = -1;} // 무한대일 경우 -1로 변환
+		else { b[T] = 0; }
+    	} else if ((r1==r2)<d && abs(r1-r2)<d) { b[T] = 2;} // 교점이 2개일 경우
+    	else if ((r1+r2)==d && abs(r1+r2)<d){ b[T] = 1;} // 교점이 1개일 경우
+    	else {b[T] = 0;}
 
-    if(x2==x1 && y1==y2) {
-        if(r1==r2) {return -1; } // 무한대일 경우 -1로 변환
-        else { return 0; }
-    	} else if ((r1==r2)<d && abs(r1-r2)<d) { return 2;} // 교점이 2개일 경우
-    	else if ((r1+r2)==d && abs(r1+r2)<d){ return 1;} // 교점이 1개일 경우
-    	else { return 0; }
-		sum[T] = main();
-    }
-	printf("%d", sum[T]);
+	if (b[T] == -1) {
+		printf("-1");
+			} else if (b[T] == 0)
+			{
+				printf("\n0");
+			} else if (b[T] == 2)
+			{
+				printf("\n2");
+			} else if (b[T] == 1)
+			{
+				printf("\n1");
+		}
+	}
+	
 	return 0;
     
 }
