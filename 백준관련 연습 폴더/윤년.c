@@ -5,12 +5,8 @@ int main() {
 
     scanf("%d", &year);
 
-    if (year / 4 && year != 100 || year / 400)
-    {
-        printf("1");
-    } else {
-        printf("0");
-    }
+    y_year = (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0);
 
+    printf("%d", y_year);
     return 0;
 }
