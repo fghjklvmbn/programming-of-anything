@@ -1,16 +1,19 @@
 #include<stdio.h>
-#include<math.h>
 
 int main() {
     int a, b;
     int sum = 0;
+    int i = 0;
 
-    for (int i = 0; i !=EOF ; i++)
+    while (i !=EOF)
     {
         scanf("%d %d", &a,&b);
+        if(a>=10||b>=10 || a<=0||b<=0){
+            return 1;
+        }
         sum = a+b;
         printf("%d\n",sum);
-        if(a==0||b==0){
+        while (i == EOF) {
             return 0;
         }
     }
