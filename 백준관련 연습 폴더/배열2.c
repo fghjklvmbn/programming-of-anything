@@ -18,8 +18,7 @@ int main() {
             }
         }
     }
-    for (int k = 1; k < b; k++)
-        {
+    for (int k = 1; k < b; k++){
             printf("%d ", array1[k]);
         }
     return 0;
