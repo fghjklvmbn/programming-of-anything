@@ -1,10 +1,6 @@
 public class 연습12 {
     public static void main(String[] args){
         int a = 1;
-        while(a<=5); {
-             System.out.println("지금"+a+"번째 작동되었습니다.");
-             a++;
-         }
         for(a = 1; a<=5 ; a++){
             System.out.println("for문이 "+a+"번째로 반복실행중입니다.");
         }
