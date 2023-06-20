@@ -14,11 +14,15 @@ int main(){
     int min_int;
 
     // 최댓값 코드
-    for(int i = 0; i<n;i++){
+    for(int i = 0;i<n;i++){
         if(i>=1){
             if(a[i-1]<a[i]){
                 max_int = a[i];
             } else {
+                continue;
+            } 
+            
+        if (a[i-1]<=a[i] || a[i-1]==a[i]) {
                 continue;
             }
         }
@@ -29,9 +33,11 @@ int main(){
     for(int i = 0; i<n;i++){
         if(a[i-1]>a[i]){
                 min_int = a[i];
-            }else {
+            }else 
+            
+        if(a[i-1]>a[i] || a[i-1]==a[i]) {
                 continue;
-        }
+        }                                                            
     }
     // 츨력
     printf("%d", min_int);
