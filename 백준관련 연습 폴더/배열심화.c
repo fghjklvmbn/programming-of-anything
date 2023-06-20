@@ -9,13 +9,25 @@ int main(void) {
 
     for(int i = 0; i<x; i++){
         scanf("%d", &arr[i]);
-        if(arr[i] < y){
-            z += 1;
-        }
     }    
+    int j =0;
+    int k =0;
 
-    printf("%d", z);
+    int result[x];
 
+    //숫자 걸러내는(필터)코드
+    for (int j = 0; j < x; j++)
+    {
+        if (arr[j]<y){
+            printf("%d ", arr[j]);
+        } else {
+            continue;
+        }
+    }
+
+    // for(int k = 0; k<x; k++){
+    //     printf("%d ", result[j]);
+    // }
 
     return 0;
 }
