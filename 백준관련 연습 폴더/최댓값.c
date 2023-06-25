@@ -30,7 +30,6 @@ int main(){
                 tmp += 1;
             }
         }
-        tmp = tmp;
     }
     printf("%d\n", max);
     printf("%d", tmp);
