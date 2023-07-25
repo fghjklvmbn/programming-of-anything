@@ -34,7 +34,7 @@ int main(void){
     int arr[30];
     int tmp;
 
-    for (int i = 0; i < 28; i++){
+    for (int i = 0; i < 28; i++){ 
         scanf("%d", &arr[i]);
     }
     
