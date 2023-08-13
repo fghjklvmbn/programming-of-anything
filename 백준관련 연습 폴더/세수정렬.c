@@ -3,17 +3,17 @@
 
 int compare(const void *a, const void *b);
 
-int main(){
-    int a[2];
+int main(void){
+    int a[3];
 
     for (int i = 0; i < 3; i++){
         scanf("%d", &a[i]);
     }
     
-    qsort(a,2, sizeof(a[0]), compare);
+    qsort(a, 3, sizeof(a[0]), compare);
 
     for (int i = 0; i < 3; i++){
-        printf("%d ", &a[i]);
+        printf("%d ", a[i]);
     }
 
     return 0;

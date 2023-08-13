@@ -38,7 +38,7 @@ int main(void){
         scanf("%d", &arr[i]);
     }
     
-    qsort(arr, 29, sizeof(arr[0]), compare);
+    qsort(arr, 30, sizeof(arr[0]), compare);
 
     for (int i = 0; i < 28; i++)
     {
