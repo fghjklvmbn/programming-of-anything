@@ -51,7 +51,7 @@ int main(void){
 	}
 
 	for(int i = 0; i<m-n; i++){
-		printf("%d", result[i]);
+		printf("%d\n", result[i]);
 	}
 	return 0;
 }
