@@ -39,7 +39,7 @@ int main(void){
 	int tmp1 = 0; // result 카운트용
 	
 	for(int i = m; i<n; i++){
-		tmp = sqrt(m);
+		tmp = sqrt((double)m);
 		if(tmp != 0){
 			continue;
 		} else if(tmp == 0){
@@ -48,6 +48,9 @@ int main(void){
 		}
 		tmp = 0; // tmp값 초기화
 	}
-	
+
+	for(int i = 0; i<m-n; i++){
+		printf("%d", result[i]);
+	}
 	return 0;
 }
