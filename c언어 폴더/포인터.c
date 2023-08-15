@@ -41,7 +41,7 @@ int main(void){
         ptr += 2;
         ptr++;
         printf("a[%d] : %d\n", i, a1[i]);
-        printf("%d\n\n", &ptr1[i]);
+        printf("%d\n\n", ptr1[i]);
     }
     
     
