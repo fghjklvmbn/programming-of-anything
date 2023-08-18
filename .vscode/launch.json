@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/srv/dev-disk-by-uuid-87189df4-04b7-4583-b01d-72ae17867089/Sub3/backup(ssd)/code/programming-of-anything",
-      "program": "/srv/dev-disk-by-uuid-87189df4-04b7-4583-b01d-72ae17867089/Sub3/backup(ssd)/code/programming-of-anything/build/Debug/outDebug",
+      "cwd": "/home/MAIN/code/programming-of-anything/백준관련_연습_폴더",
+      "program": "/home/MAIN/code/programming-of-anything/백준관련_연습_폴더/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

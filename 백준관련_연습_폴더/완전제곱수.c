@@ -31,7 +31,7 @@
 
 int main(void){
 	int m,n;
-	int tmp =0; // 제곱근했을때 결과값 저장용
+	double tmp =0; // 제곱근했을때 결과값 저장용
 	
 	scanf("%d", &m);
 	scanf("%d", &n);
@@ -50,7 +50,7 @@ int main(void){
 		tmp = 0; // tmp값 초기화
 	}
 
-	for(int i = 0; i<m-n; i++){
+	for(int i = 0; i<10; i++){
 		printf("%d\n", result[i]);
 	}
 	return 0;
