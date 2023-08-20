@@ -12,8 +12,9 @@ int main(){
         } else if (a>b) {
             arr[tmp] = 0;
         } else if (a>0 && b>0 && a==b){
-            arr[tmp] = 0;
+            arr[tmp] = 2;
         } else if(a==0 && b==0){
+            tmp++;
             break;
         }
         tmp++;
@@ -21,9 +22,9 @@ int main(){
 
     for (int i=0; i<tmp; i++) {
         if(arr[i] == 0){
-            printf("No\n");
-        } else if(arr[i] == 1) {
             printf("Yes\n");
+        } else if(arr[i] == 1 || arr[i] == 2) {
+            printf("No\n");
         }
     }
 

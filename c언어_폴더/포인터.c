@@ -1,5 +1,5 @@
 #include<stdio.h>
-// void 쓰임새  1. 포인터사용(뭐든 가리키는게 가능)   2. 반환값 
+// void 쓰임새  1. 포인터로 사용할떄 뭐든 가리키는게 가능   2. 반환값 
 int main(void){
     int arr[3] = {0,1,2};
     printf("배열의 이름 : %p\n", arr);
@@ -44,9 +44,6 @@ int main(void){
         printf("%d\n\n", ptr1[i]);
     }
     
-    
-
-
-
+    return 0;
 
 }

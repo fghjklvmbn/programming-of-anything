@@ -50,7 +50,7 @@ int main(void){
 		tmp = 0; // tmp값 초기화
 	}
 
-	for(int i = 0; i<10; i++){
+	for(int i = 0; i<tmp; i++){
 		printf("%d\n", result[i]);
 	}
 	return 0;
