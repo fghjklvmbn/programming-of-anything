@@ -35,5 +35,6 @@
     "**/.vscode/**"
   ],
   "C_Cpp_Runner.useAddressSanitizer": false,
-  "terminal.integrated.allowMnemonics": true
+  "terminal.integrated.allowMnemonics": true,
+  "java.debug.settings.onBuildFailureProceed": true
 }

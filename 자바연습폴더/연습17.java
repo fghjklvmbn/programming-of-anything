@@ -1,0 +1,109 @@
+// 위키독 https://wikidocs.net/205
+
+import java.util.Scanner;
+
+public class 연습17 {
+    public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+    
+        System.out.println(7%3);
+        System.out.println(7/3);
+        System.out.println(3/7);
+        System.out.println(3%7);
+
+        int a = 0;
+
+        System.out.println("전증가 a 값: " + ++a);
+        a =0; // 초기화
+        System.out.println("후증가 a값 : " + a++);
+        System.out.println("이후 a값 : "+a);
+
+    int oct = 023; // 8진수
+    int hex = 0xc; // 6진수
+
+    System.out.println(oct);
+    System.out.println(hex);
+    
+    boolean n = true;
+
+    System.out.println(n);
+    System.out.println(!n); 
+    /*
+    *부정의 !가 붙으니 값이 반대로 됨true -> false
+    */
+    
+    // boolean 간단예제
+    int x = 90;
+    int y = 95;
+
+    boolean isitTall = x>y;
+
+    if(isitTall == true){
+        System.out.println("y는 x보다 큽니다.");
+    } else {
+        System.out.println("x는 y보다 큽니다.");
+    }
+
+    // char 간단예제
+    char d = 'a';
+    char e = 97; // 아스키코드 97번은 소문자 a
+    char f = '\u0061'; // u : 유니코드를 뜻함 유니코드 0061번은 소문자 a
+
+    System.out.println(d);
+    System.out.println(e);
+    System.out.println(f);
+
+
+    // 원시자료형과 다른 String 간단예제
+    String g = "asdf";
+    // 혹은 
+    String h = new String("asdf"); 
+    // 원시 자료형이 아닌 덕에 scanner 처럼 new string()이런식
+    // 으로 가능
+
+    System.out.println(g);
+    System.out.println(h);
+
+
+    // equals 활용문
+    System.out.println(g.equals(h));
+    System.out.println(!g.equals(h));
+
+    // indexof/contain 활용
+    System.out.println(g.indexOf("as")); // 0번째 시작
+    System.out.println(g.contains("as")); // 부분 일치(true)
+
+    // charAt 활용
+    System.out.println(g.charAt(2)); // 2번글자 d 출력
+
+    // replaceall 활용
+    System.out.println(g.replaceAll("as", "df"));
+    // asdf이 dfdf으로 바뀜 원본은 안바뀜..
+
+    // substring 활용
+    System.out.println(g.substring(0, 4));
+    //0부터 4까지 출력 : asdf 그대로 출력
+
+    // touppercase 활용
+    System.out.println(g.toUpperCase());
+    // 모두 대문자로(ASDF) : 반대로도 가능(toLowerCase())
+
+    // split 활용 : a:s:d:f을 ":" 표시단위로 쪼갬(split)
+    String ha = "a:s:d:f";
+    String[] result = ha.split(":");
+    for(int i = 0; i<ha.length()-3; i++){
+        System.out.println(result[i]);
+    }
+    // String을 쪼개 배열단위로 저장한 다음에 ":"을 제거하고
+    // 배열에 따라 출력 
+
+
+    // 문자열 포매팅: String.format을 주로 사용함
+    // 아래예제는 arg자리에 scanner 활용해서 대입
+    // 값 넣기는 솔직히 c의 scanf 생각하면 될듯..
+    System.out.println(String.format("i ate %s apple", sc.nextLine()));
+    
+
+    }
+}

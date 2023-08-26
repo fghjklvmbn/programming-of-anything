@@ -2,6 +2,34 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "연습17",
+      "request": "launch",
+      "mainClass": "연습17",
+      "projectName": "programming-of-anything_c65fd71b"
+    },
+    {
+      "type": "java",
+      "name": "test",
+      "request": "launch",
+      "mainClass": "test",
+      "projectName": "programming-of-anything_c65fd71b"
+    },
+    {
+      "type": "java",
+      "name": "예외처리심화",
+      "request": "launch",
+      "mainClass": "예외처리심화",
+      "projectName": "programming-of-anything_c65fd71b"
+    },
+    {
+      "type": "java",
+      "name": "예외처리",
+      "request": "launch",
+      "mainClass": "예외처리",
+      "projectName": "programming-of-anything_c65fd71b"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",

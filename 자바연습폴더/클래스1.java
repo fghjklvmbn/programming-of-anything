@@ -19,7 +19,6 @@ public class 클래스1 {
     public static void main(String[] args){
         car c = new car(null, 0, null);
         int a[][] = new int[3][3];
-        a[0][1] = {{1,2}};
         
 
 

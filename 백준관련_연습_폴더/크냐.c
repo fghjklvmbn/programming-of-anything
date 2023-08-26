@@ -1,20 +1,19 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main(){
+int main(void){
     // 입력부분
     int a,b;
     int tmp = 0;
     int arr[tmp];
     
-    while (scanf("%d %d", &a, &b)) {
+    while (scanf("%d %d", &a, &b) != 0) {
         if (a<b) {
             arr[tmp] = 1;
         } else if (a>b) {
             arr[tmp] = 0;
         } else if (a>0 && b>0 && a==b){
             arr[tmp] = 2;
-        } else if(a==0 && b==0){
-            tmp++;
+        } else if(a == 0 && b == 0){
             break;
         }
         tmp++;
@@ -27,6 +26,5 @@ int main(){
             printf("No\n");
         }
     }
-
     return 0;
 }
