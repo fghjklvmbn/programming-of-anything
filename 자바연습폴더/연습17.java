@@ -104,6 +104,24 @@ public class 연습17 {
     // 값 넣기는 솔직히 c의 scanf 생각하면 될듯..
     System.out.println(String.format("i ate %s apple", sc.nextLine()));
     
+    // 포멧코드는 c의 그것을 생각하면 됨. %s 같은 경우는
+    // 문자형 정수형 double형 상관없이 됨.
+    // 다 문자열로 변환하기 때문.
+
+    System.out.println(String.format("i have %s apples", 3.14));
+
+    // 다른 특이한점은 %% 포멧코드가 있는데 이것은 %를 표시하기 위함이다.
+    System.out.println(String.format("error is %d%%.", 98));
+
+    // 공백코드(역시나 c언어의 그거 생각하면 됨)
+    System.out.println(String.format("%10d", 123));
+    // 출력 : "       123"
+
+
+    // printf 역시 c의 그것
+    System.out.printf("%d", 123);
+    
+
 
     }
 }
