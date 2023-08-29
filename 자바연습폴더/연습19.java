@@ -66,13 +66,14 @@ public class 연습19 {
         System.out.println(hwan);
 
 
-        // sort
-
+        // sort 정렬시켜주는 함수 주로 
+        // "변수명".sort(comparator.(내림차순)reverseOrder()/(오름차순)natualOrder())
+        // 으로 쓴다.
         ArrayList<String> al6 = new ArrayList<>(Arrays.asList("432","194","253"));
         al6.sort(Comparator.naturalOrder());
         System.out.println(al6.get(0));
 
-        
+
 
     }
 }
