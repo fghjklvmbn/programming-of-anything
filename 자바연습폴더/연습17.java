@@ -5,15 +5,17 @@ import java.util.Scanner;
 public class 연습17 {
     public static void main(String[] args){
 
+        // 스캐너
         Scanner sc = new Scanner(System.in);
-    
+        // 나눗셈, 나머지 결과 출력
         System.out.println(7%3);
         System.out.println(7/3);
         System.out.println(3/7);
         System.out.println(3%7);
 
-        int a = 0;
 
+        int a = 0;
+        // 전증가 / 후증가 차이 출력
         System.out.println("전증가 a 값: " + ++a);
         a =0; // 초기화
         System.out.println("후증가 a값 : " + a++);
@@ -22,9 +24,11 @@ public class 연습17 {
     int oct = 023; // 8진수
     int hex = 0xc; // 6진수
 
+    // 각각 출력
     System.out.println(oct);
     System.out.println(hex);
-    
+        
+    // boolean 초기화(true/false)
     boolean n = true;
 
     System.out.println(n);
@@ -38,7 +42,8 @@ public class 연습17 {
     int y = 95;
 
     boolean isitTall = x>y;
-
+    
+    // boolean으로 정의된 isitTall함수에서 나오는 결과를 if으로 true/false를 판단하여 출력
     if(isitTall == true){
         System.out.println("y는 x보다 큽니다.");
     } else {
@@ -50,7 +55,7 @@ public class 연습17 {
     char e = 97; // 아스키코드 97번은 소문자 a
     char f = '\u0061'; // u : 유니코드를 뜻함 유니코드 0061번은 소문자 a
 
-    System.out.println(d);
+    System.out.println(d); 
     System.out.println(e);
     System.out.println(f);
 
@@ -120,7 +125,7 @@ public class 연습17 {
 
     // printf 역시 c의 그것
     System.out.printf("%d", 123);
-    
+
 
 
     }
