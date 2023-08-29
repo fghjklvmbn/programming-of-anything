@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class 연습19 {
     public static void main(String[] args){
@@ -28,8 +29,49 @@ public class 연습19 {
         all.add(0,"park");
         all.add(1, "gyeonghwan");
 
-        System.out.println(all.get(1)); // 형 변환 필요없음
+        System.out.println(all.get(1)); // get으로 인덱스 1의 배열을 출력한다.(형 변환 필요없음)
         System.out.println(all); // arraylist 에 있는 모든 배열을 출력한다.
+
+
+
+        // aslist 사용시  add로 추가안해도 기존 배열에서 끌어올수 있음
+        String[] abc = {"park", "gyeong", "hwan"};
+        ArrayList<String> al3 = new ArrayList<>(Arrays.asList(abc));
+        al3.add(0,"123");
+        al3.add(1, "456");
+
+        System.out.println(al3.toString());
+
+
+        // 직접 aslist에서 추가 할수 있음
+        ArrayList<String> al4 = new ArrayList<>(Arrays.asList("park", "whan"));
+        System.out.println(al4);
+
+
+        // 콤마 넣는 방법
+        // 1. 반복문에 콤마만 끼어 넣고 substring으로 마지막 콤마 뺴는 방식
+        String park = "";
+        for(int i = 0; i<al4.size(); i++){
+            park += al4.get(i);
+            park += ",";
+        }
+        park = park.substring(0, park.length()-1);
+        System.out.println(park);
+
+        // 2. String.join으로 ","를 넣는 방법
+
+        ArrayList<String> al5 = new ArrayList<>(Arrays.asList("123","234"));
+        String hwan = String.join(",", al5);
+        // string.join은 배열 하나가 끝나는 동시에 문자열을 대입시켜준다
+        System.out.println(hwan);
+
+
+        // sort
+
+        ArrayList<String> al6 = new ArrayList<>(Arrays.asList("432","194","253"));
+        al6.sort(Comparator.naturalOrder());
+        System.out.println(al6.get(0));
+
 
 
     }
