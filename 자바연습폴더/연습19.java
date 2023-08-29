@@ -72,7 +72,7 @@ public class 연습19 {
         al6.sort(Comparator.naturalOrder());
         System.out.println(al6.get(0));
 
-
+        
 
     }
 }
