@@ -12,7 +12,9 @@ class coffee {
 // coffee 상속
 public class 연습21 extends coffee {
     public static void main(String[] args){
-        for(coffeeType type: coffeeType.values()){ // 저 coffeeType이라는 클래스에서 값의 배열(values)을 땡겨오는 작업
+        // 저 coffeeType이라는 클래스에서 값의 배열(values)을 땡겨오는 작업
+        // value 값을 coffeeType 에 있는 값만큼 for문으로 반복시키는 명령어!
+        for(coffeeType type: coffeeType.values()){
             System.out.println(type); // 출력
         }
 
@@ -23,6 +25,8 @@ public class 연습21 extends coffee {
 
         // enum을 사용하지 않으면 커피를 기억하면서 숫자로 지칭해야 되므로 불편해지며
         // 숫자에 없는 커피를 출력하면 오류가 나온다.
+
+
 
 
     }
