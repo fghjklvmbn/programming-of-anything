@@ -9,13 +9,24 @@ class coffee {
     };
 }
 
-// exception 상속-> 
+// exception 상속 -> Abc
  class Abc extends Exception {
 
 }
 
 // coffee 상속
 public class 연습21 extends coffee {
+
+    public void sub(String[] Abc){
+        try {
+            int a = 4/0;
+            if(Abc.equals("park")){
+                throw new Abc();
+            }
+        } catch (Exception e) {
+            System.out.println("exception이 발생했습니다.");
+        }
+    }
     public static void main(String[] args){
         // 저 coffeeType이라는 클래스에서 값의 배열(values)을 땡겨오는 작업
         // value 값을 coffeeType 에 있는 값만큼 for문으로 반복시키는 명령어!
@@ -30,7 +41,10 @@ public class 연습21 extends coffee {
 
         // enum을 사용하지 않으면 커피를 기억하면서 숫자로 지칭해야 되므로 불편해지며
         // 숫자에 없는 커피를 출력하면 오류가 나온다.
+        Abc A = new Abc();
 
+        A.equals("박");
+        A.equals("박경환");
 
 
 
