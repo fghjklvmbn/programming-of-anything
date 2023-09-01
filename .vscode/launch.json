@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "연습21",
+      "request": "launch",
+      "mainClass": "연습21",
+      "projectName": "programming-of-anything_4a59d3e4"
+    },
+    {
+      "type": "java",
       "name": "연습17",
       "request": "launch",
       "mainClass": "연습17",

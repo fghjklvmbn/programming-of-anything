@@ -9,6 +9,11 @@ class coffee {
     };
 }
 
+// exception 상속-> 
+ class Abc extends Exception {
+
+}
+
 // coffee 상속
 public class 연습21 extends coffee {
     public static void main(String[] args){
