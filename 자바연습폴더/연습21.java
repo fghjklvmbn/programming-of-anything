@@ -81,7 +81,7 @@ public class 연습21 extends coffee {
 
         // string으로 제시된 a,b는 사전에 추가할 수 있음. 재할당만 안되는 거
         final List<String> a1 = List.of("a", "b");
-        final ArrayList<String> a2 = new ArrayList(Arrays.asList("a","b"));
+        final ArrayList<String> a2 = new ArrayList<>(Arrays.asList("a","b"));
         System.out.println(a1.get(1)); // 1번 값만 출력
         System.out.println(a2.toString()); // string 값만 출력
 
