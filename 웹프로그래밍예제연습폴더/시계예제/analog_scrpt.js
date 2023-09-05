@@ -14,8 +14,12 @@ function clockTick(){
     rotateClockHand(hrHand, hr);
 }
 
+// const sound = document.onplay("test.wav") ;
+
+
 function rotateClockHand(element, rotation) {
     element.style.setProperty('--rotate', rotation * 360);
 }
 
 setInterval(clockTick, 1000)
+// setInterval(sound, 1000)
