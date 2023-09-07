@@ -2,7 +2,6 @@
 
 
 int seq_search(int list[], int key){
-    int i;
     for(int i =0; i<n; i++){
         if(list[i] == key){
             return 1;
