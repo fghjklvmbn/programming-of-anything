@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-#define max 100;
+#define max 5;
 
 int get_max_score(int n, int scores[100]){
     int i, large;
@@ -15,12 +15,12 @@ int get_max_score(int n, int scores[100]){
 
 int main(){
     int a = max;
-    int scores[100];
+    int score[a];
     for (int i = 0; i < a; i++){
-        scanf("%d", &scores[100]);
+        scanf("%d", &score[i]);
     }
     int result;
-    result = get_max_score(a, scores[100]);
+    result = get_max_score(a, &score[100]);
     printf("%d", result);
     
 
