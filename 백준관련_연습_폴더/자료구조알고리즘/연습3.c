@@ -1,27 +1,22 @@
 #include<stdio.h>
+#include<math.h>
 
-int func1(int arr[], int N){
-    // O(n^2)
-    for (int i = 0; i < N; i++){ // arr[0]
-        for (int j = i+1; j < N; i++){ // arr[0+1] -> arr[1]
-            if(arr[i] * arr[j] == 100){ // arr[0]* arr[1] == 100 이면
-                return 1;// 1 리턴
-            }
-        }
-    }
-    return 0; // 아니면 0 리턴
-}
+
 
 int main(){
-    int n;
-    scanf("%d", &n);
-    int arr[n];
-    for (int i = 0; i < n; i++){
-        scanf("%d", &arr[i]);
+    int N;
+    scanf("%d", &N);
+    // 1,2,3,4,5,6,7,8,9
+    /*
+    n이 제곱수이면 1
+    아니면 0 반환
+
+    sqrt? - double형이 되므로 안됨
+    */
+   if(N/sqrt(N) == 0){
+        printf("1");
+    } else {
+        printf("0");
     }
-
-    printf("%d", func1(&arr[n], n));
-
     return 0;
-
 }
