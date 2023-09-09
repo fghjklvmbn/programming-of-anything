@@ -7,8 +7,8 @@ int* input(int n){
     int arr[n];
     for (int i = 0; i < n; i++){
         scanf("%d", &arr[i]);
-        return arr;
     }
+    return arr;
 }
 
 int func2(int arr[], int N){
