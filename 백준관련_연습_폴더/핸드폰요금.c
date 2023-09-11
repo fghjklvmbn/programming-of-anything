@@ -4,10 +4,18 @@ int yongsik(int result[],int b){
     int 요금 = 10;
     int res = 0;
     int 단위 = 30;
+    int 구간 = 20;
 
     for (int i = 0; i < b; i++){
-        for(int j = result[i] / 단위; j > 0; j--){
-            res += 요금;
+        if(0<result[i]< 단위){
+            res+=요금;
+        } else {
+            for(int j = result[i] / 단위; j > 1; j--){
+                if(result[i]/단위 == 0){
+                    break;
+                }
+                res += 구간;
+            }
         }
         // if (result[i]<단위){
         //     res += 요금;
@@ -24,10 +32,18 @@ int minsik(int result[], int c){
     int 요금 = 15;
     int res = 0;
     int 단위 = 60;
+    int 구간 = 30;
 
     for (int i = 0; i < c; i++){
-        for(int j = result[i] / 단위; j > 0; j--){
-            res += 요금;
+        if(0<result[i]< 단위){
+            res+=요금;
+        } else {
+            for(int j = result[i] / 단위; j > 1; j--){
+                if(result[i]/단위 == 0){
+                    break;
+                }
+                res += 구간;
+            }
         }
         // if (result[i]<단위){
         //     res += 요금;
@@ -62,12 +78,9 @@ int main(){
     scanf("%d", &a);
     int arr[a];
 
-    for (int i = 0; i<a; i++) {
+    for (int i = 1; i<=a; i++) {
         scanf("%d", &arr[i]);
     }
-
-    
-
     res1 = minsik(arr, a);
     res2 = yongsik(arr, a);
 
