@@ -55,6 +55,6 @@ let username;
 
 document.getElementById("mybutton").onclick = function(){
     username = document.getElementById("mytext").value;
-    console.log(username);    
+    console.log(username); // html에서 끌어와서
     document.getElementById("mylabel").innerHTML = "hello " + username;
 }
