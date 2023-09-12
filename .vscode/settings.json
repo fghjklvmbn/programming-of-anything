@@ -40,5 +40,21 @@
   "C_Cpp.errorSquiggles": "disabled",
   "files.associations": {
     "stdio.h": "c"
-  }
+  },
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "dsapoi881.duckdns.org",
+      "port": 3307,
+      "driver": "MariaDB",
+      "name": "main",
+      "database": "park",
+      "username": "root",
+      "password": "oknwsx9283."
+    }
+  ]
 }

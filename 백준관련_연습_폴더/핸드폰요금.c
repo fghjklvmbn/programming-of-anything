@@ -1,55 +1,39 @@
 #include<stdio.h>
 
-int yongsik(int result[],int b){
-    int 요금 = 10;
+int minsik(int result[], int b){
     int res = 0;
-    int 단위 = 30;
-    int 구간 = 20;
-
+    int 요금 = 15;
+    int n = 60;
     for (int i = 0; i < b; i++){
-        if(0<result[i]< 단위){
-            res+=요금;
-        } else {
-            for(int j = result[i] / 단위; j > 1; j--){
-                if(result[i]/단위 == 0){
-                    break;
-                }
-                res += 구간;
+        int a = 0;
+        a = result[i] / 60;
+        if(a==0){
+            res += 요금;
+        }
+        for (int j = a; j >= 0; j--){
+            if((a*n) <= result[i] < ((a*(2*n)))){
+                res += 요금;
             }
         }
-        // if (result[i]<단위){
-        //     res += 요금;
-        // } else if(result[i]>=단위) {
-        //     res += 요금*(result[i]/단위);
-        // } else if (result[i]/단위) {
-        
-        // }
     }
     return res;
 }
 
-int minsik(int result[], int c){
-    int 요금 = 15;
+int yongsik(int result[], int c){
     int res = 0;
-    int 단위 = 60;
-    int 구간 = 30;
-
+    int 요금 = 10;
+    int n = 30;
     for (int i = 0; i < c; i++){
-        if(0<result[i]< 단위){
-            res+=요금;
-        } else {
-            for(int j = result[i] / 단위; j > 1; j--){
-                if(result[i]/단위 == 0){
-                    break;
-                }
-                res += 구간;
+        int a = 0;
+        a = result[i] / 30;
+        if(a==0){
+            res += 요금;
+        }
+        for (int j = a; j >= 0; j--){
+            if((a*n) <= result[i] < ((a*(2*n)))){
+                res += 요금;
             }
         }
-        // if (result[i]<단위){
-        //     res += 요금;
-        // } else if(result[i]>=단위) {
-        //     res += 요금*(result[i]/단위);
-        // }
     }
     return res;
 }
@@ -57,13 +41,13 @@ int minsik(int result[], int c){
 
 
 int print(int res1, int res2){
-    if (res1>res2) {
+    if (res1>res2) { // 요금이 영식쪽이 더 작으면
         printf("Y ");
         printf("%d\n", res2); // 영식
-    } else if (res2>res1) {
+    } else if (res2>res1) { // 요금이 민식쪽이 더 작으면
         printf("M ");
         printf("%d\n", res1); // 민식
-    } else if (res1 == res2) {
+    } else if (res1 == res2) { // 둘다 요금이 같다면
         printf("Y M ");
         printf("%d\n", res1); // 둘다 출력
     }  
@@ -77,12 +61,14 @@ int main(){
 
     scanf("%d", &a);
     int arr[a];
-
-    for (int i = 1; i<=a; i++) {
+    // 여기가 문제였음 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+    for (int i = 0; i<a; i++) {
         scanf("%d", &arr[i]);
     }
     res1 = minsik(arr, a);
     res2 = yongsik(arr, a);
 
     print(res1, res2);
+
+    return 0;
 }

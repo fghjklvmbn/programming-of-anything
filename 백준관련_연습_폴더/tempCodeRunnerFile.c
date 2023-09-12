@@ -1,2 +1,4 @@
-printf("민식 : %d\n", minsik(&a[2]));
-    // printf("영식 : %d\n", yongsik(&a[2]));
+if((a*n) < result[i] < ((a*n)+29)){
+                res += 요금;
+                printf("민식 : %d\n", res);
+            }
