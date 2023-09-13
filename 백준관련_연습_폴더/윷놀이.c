@@ -1,18 +1,18 @@
 #include<stdio.h>
 
-int sum(int tmp[][]){
+int sum(int tmp[]){
     int A[5] = {0};
 
     for (int i = 0; i < 5; i++){
-        if (tmp[i][0] == 1){ // 1일경우 (0,0,0,1일 경우)
+        if (tmp[i] == 1){ // 1일경우 (0,0,0,1일 경우)
             A[0] = 1;
-        } else if(tmp[1] == 2){ // 2일경우(1,1,0,0)
+        } else if(tmp[i] == 2){ // 2일경우(1,1,0,0)
             A[1] = 1;
-        } else if (tmp[2] == 3){ // 3일경우(1,1,1,0)
+        } else if (tmp[i] == 3){ // 3일경우(1,1,1,0)
             A[2] = 1;
-        } else if (tmp[3] == 4){ // 4일경우(1,1,1,1)
+        } else if (tmp[i] == 4){ // 4일경우(1,1,1,1)
             A[3] = 1;
-        } else if (tmp[4] == 0){ // 0일경우(0,0,0,0)
+        } else if (tmp[i] == 0){ // 0일경우(0,0,0,0)
             A[4] = 1;
         }
     }
@@ -22,20 +22,19 @@ int sum(int tmp[][]){
 
 // 이차원 배열 : i가 1일때 0배열이 1이라면 "A" 출력 
 
-int print(int a[][]){
-    for (int i = 0; i < 3; i++){
-        if(a[i][0] == 1){
-            printf("A\n");
-        }else if (a[i][1] == 1){
-            printf("B\n");
-        }else if (a[i][2] == 1){
-            printf("C\n");
-        }else if (a[i][3] == 1){
-            printf("D\n");
-        }else if (a[i][4] == 1){
-            printf("E\n");
-        }
-    }
+int print(int a[]){
+    if (a[0] == 1){
+       printf("A\n");
+    } else if (a[1] == 1){
+       printf("B\n");
+    } else if (a[2] == 1){
+       printf("C\n");
+    } else if (a[3] == 1){
+       printf("D\n");
+    } else if (a[4] == 1){
+       printf("E\n");
+    } 
+    
 
     return 0;
 }
@@ -50,7 +49,7 @@ int main(void){
         for (int j = 0; j < 4; j++){
             scanf("%d", &a[i][j]); // 입력
             if(a[i][j] == 1) {
-                tmp[i][j]++;
+                tmp[i]++;
             }
         }
         b[5] = sum(tmp); 
