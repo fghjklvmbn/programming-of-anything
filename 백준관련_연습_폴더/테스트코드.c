@@ -61,8 +61,8 @@
 #include<stdio.h>
 
 int main(){
-    int a, b;
-    scanf("%d %d", &a, &b);
-    printf("%d\n", (!a&&!b)||!(a&&b)); //  교집합만 없고 다 있는거 = XOR 연산 
+    int a;
+    scanf("%d", &a);
+    printf("%d\n", ~a); //  교집합만 없고 다 있는거 = XOR 연산 
     return 0;
 }
