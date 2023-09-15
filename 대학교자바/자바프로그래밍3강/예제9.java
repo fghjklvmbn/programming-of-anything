@@ -1,4 +1,4 @@
-package 대학교자바;
+package 대학교자바.자바프로그래밍3강;
 
 public class 예제9 {
     public static void main(String[] args) {
