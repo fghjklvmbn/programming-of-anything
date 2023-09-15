@@ -58,16 +58,55 @@
 //     }
 // }
 
+// 1079번
+// 1 번풀이
+// #include<stdio.h>
+
+// int main(void) {
+//     char a;
+//     scanf("%c", &a);
+//     printf("%c\n", a);
+//     while (a!= 'q'){
+//         scanf("%s", &a);
+//         printf("%c\n", a);
+//     }
+//     return 0;
+// }
+
+// 2번 풀이
+// q 입력될 때까지 계속 출력
+
+// #include<stdio.h>
+
+// int main(){
+//     char a;
+//     for (int i = 0; a != 'q'; i++){
+//         scanf("%c", &a);
+//         printf("%c", a);
+//     }
+//     return 0;
+// }
+
+
+// 1, 2, 3, 4, 5 ... 를 순서대로 계속 더해 합을 만들어가다가,
+// 입력된 정수와 같거나 커졌을 때, 마지막에 더한 정수를 출력한다.
+
 #include<stdio.h>
 
-int main(void) {
-    char a;
-    char b = 'a';
-    scanf("%c", &a);
-    while (a!=b){
-        printf("%c ", b);
-        b++;
-    }
-    printf("%c", b);
+int main(){
+    int h, b, c, s;
+    double sum = 0;
+    scanf("%d %d %d %d", &h, &b, &c, &s);
+    double tmp = (h*b*c*s)/8;
+    sum = (tmp/1024)/1000;
+
+    printf("%.1f MB", sum);
     return 0;
 }
+
+// int sub(int d, int sum){
+//     for (int i = 0; sum >= d; i++){
+        
+//     }
+//     return result;
+// }
