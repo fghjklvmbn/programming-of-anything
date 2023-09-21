@@ -55,16 +55,15 @@ if(ret == true){
 
 
 // 과제 로직(비밀번호 불일치시 반복)
-
-let a = prompt("비밀번호를 입력해 주세요");
-let b = prompt("비밀번호를 다시 입력해 주세요");
-function f(a,b){
-    do{
-        prompt("패스워드를 입력해주세요 : ");
-    } while (a == b){
-        if(a != b){
-            alert("비밀번호가 틀렸습니다. 다시 입력해 주세요. ");
+function f(id, id_key, x, y){
+    while (x!= y && id != id_key){
+        alert("ID또는 비밀번호가 틀렸습니다. 다시 입력해 주세요. ");
+        id_key = prompt("사용자 이름을 입력해주세세요");
+        y = prompt("바밀번호를 입력하시오 ");
+        if(x == y && id == id_key){
+            break;
         }
-        alert("통과되었습니다.");
     }
+    alert(id+"님 환영합니다.");
+    document.write("통과!");
 }

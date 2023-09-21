@@ -94,15 +94,16 @@
 #include<stdio.h>
 
 int main(){
-    int h, b, c, s;
-    double sum = 0;
-    scanf("%d %d %d %d", &h, &b, &c, &s);
-    double tmp = (h*b*c*s)/8;
-    sum = (tmp/1024)/1000;
+    int w,h;
+    scanf("%d %d", &w, &h);
+    int a[w][h];
+    int l,d,x,y;
+    scanf("%d %d %d %d", &l, &d, &x, &y);
 
-    printf("%.1f MB", sum);
+
     return 0;
 }
+
 
 // int sub(int d, int sum){
 //     for (int i = 0; sum >= d; i++){

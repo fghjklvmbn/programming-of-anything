@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src = "수업3강.js"></script> -->
+</head>
+<body>
+    <!-- <h3>account 프로토타입 만들기</h3>
+    <hr> -->
+    <!-- <script>
+        let account = new Account("황기태", "111", 35000);
+        document.write("account = ");
+        document.write(account.owner + ", ");
+        document.write(account.code + ", ");
+        document.write(account.balance + "<br>");
+
+        account.despoit(10000);
+        document.write("10000원 저금 후 잔액은 " + account.inqury() + "입니다.<br>");
+        account.withdraw(5000);
+        document.write("5000원 차감 후 잔액은 " + account.inqury() + "입니다.");
+    </script> -->
+    <h3>book 객체 만들기</h3>
+    <hr>
+    <script>
+        // 1번
+        let book = new Object();
+        book.bookname = "HTML5",
+        book.name = "황기태",
+        book.value = 20000
+        document.write("book : " + book.bookname + book.name + book.value);
+    </script>
+    <br>
+    <script>
+        // 2번
+        let book1 = {
+            bookname : "HTML5", 
+            name : "황기태", 
+            value : 20000
+        }
+        document.write("book : ", book1.bookname + book1.name + book1.value)
+    </script>
+    <br>
+    <script>
+        function f(bookname, name, value){
+            this.bookname = bookname;
+            this.name = name;
+            this.value = value;
+            document.write("book : ", bookname, name, value);
+        }
+        f("HTML5", "황기태", 20000);
+    </script>
+
+</body>
+</html>
