@@ -1,4 +1,3 @@
-#include <complex.h>
 #include <stdio.h>
 
 // int up(){
@@ -34,7 +33,7 @@ int main(){
     int select = 0;
     int leng[501];
     int leng_tmp = 0;
-    char 기준점[2][10] = {"KBS1", "KBS2"};
+    char 기준점[2][5] = {"KBS1", "KBS2"};
     // 입력단
     for (int i = 0; i<channel_count; i++) {
         scanf("%s", &a[i]);
