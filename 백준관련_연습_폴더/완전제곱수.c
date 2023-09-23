@@ -26,32 +26,33 @@
 
 
 #include<stdio.h>
-#include<math.h>
-#include<stdlib.h>
 
 int main(void){
 	int m,n;
-	double tmp =0; // 제곱근했을때 결과값 저장용
-	
+		
 	scanf("%d", &m);
 	scanf("%d", &n);
-	
-	int result[m-n];
-	int tmp1 = 0; // result 카운트용
-	
-	for(int i = m; i<n; i++){
-		tmp = sqrt((double)m);
-		if(tmp != 0){
-			continue;
-		} else if(tmp == 0){
-			result[tmp1] = m;
-			tmp1++;
-		}
-		tmp = 0; // tmp값 초기화
-	}
+	int minus = m-n;
+	int result[minus];
+	int tmp = 0;
+	int not_count = 0;
 
-	for(int i = 0; i<tmp; i++){
-		printf("%d\n", result[i]);
+	for (int i = m; i <= n; i++){
+		int b = i*i;
+		if ( b % i == 0){
+			result[tmp] = i;
+			tmp++;
+		} else {
+			not_count++;
+		}
+	}
+	for (int i = tmp; i>=0; i--){
+		if (not_count == (m-n)){
+			printf("-1\n");
+			break;
+		} else {
+			printf("%d", result[i]);
+		}
 	}
 	return 0;
 }
