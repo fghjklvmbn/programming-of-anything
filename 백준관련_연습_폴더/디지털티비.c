@@ -48,9 +48,7 @@ int main(){
         for (int j = select; &a[0] == 기준점[0]; j--) {
                 upper(a, j, leng, leng_tmp);
         }
-
         select = 0;
-
         for (int j = 0; &a[j] == 기준점[1] ; j++, leng_tmp++) {
             leng[leng_tmp] = 1;
             select = j;
@@ -59,10 +57,9 @@ int main(){
                 upper(a, j, leng, leng_tmp);
         }
     }
-
+    // 출력단
     for (int i = 0; i<leng_tmp; i++) {
         printf("%d", leng[i]);
     }
-
     return 0;
 }
