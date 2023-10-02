@@ -127,6 +127,6 @@ public class 연습17 {
     System.out.printf("%d", 123);
 
 
-
+    sc.close();
     }
 }

@@ -16,4 +16,5 @@ public class 연습23 {
             System.out.println("잘못된 숫자입니다. 다시 실행해주세요.");
         } 
     }
+    
 }

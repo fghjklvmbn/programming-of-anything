@@ -21,5 +21,7 @@ public class test {
         String a = sc.nextLine();
 
         test.park(a);
+
+        sc.close();
     }
 }

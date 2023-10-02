@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 문서 작성기</title>
+    <script>
+    let win = null;
+        function showHTML(){
+            if(win == null || win.closed){
+                win = window.open("", "outwin", "width=300", "height=200");
+                let textarea = document.getElementById("srctxt");
+                win.document.open();
+                win.document.write(textarea.value);
+                win.document.close();
+            }
+        }
+    </script>
+    <!-- <script>
+        function f(){
+            let a = document.getElementsByTagName("span");
+            for(let i = 0; i < length.a; i++){
+                let span = a[i];
+                span.style.color = "orchid";
+                span.style.fontSize = "20px";
+            }
+        }
+    </script> -->
+    
+    <!-- <script>
+        function f(){
+            let span = document.getElementById("span1");
+            span.style.color = "green";
+            span.style.fontSize = "30px";
+            span.style.display = "block";
+            span.style.width = "6em";
+            span.style.border = "3px dotted magenta";
+            span.style.margin = "20px";
+        }
+    </script> -->
+</head>
+<body>
+    <!-- <h3>내가 좋아하는 과일
+    <button onclick="f()">누르세요</button>
+    </h3>
+    <hr>
+    저는 빨간 <span>사과</span>를 좋아해서 아침마다 한 개씩 먹고 있어요. 운동할 때는 중간 중간에 <span>바나나</span>를 먹지요. 탄수화물 섭취가 빨라 힘이 납니다. 또한 달콤한 향기를 품은 <span>체리</span>와 여름냄새 물씬나는 <span>자두</span>를 좋아합니다. -->
+    <h3>HTML 문서 작성기 만들기</h3>
+    <hr>
+    <p>아래에 HTML문서를 작성하고 버튼을 클릭해보세요. 새 윈도우에 HTML문서가 출력됩니다.</p>
+    <textarea id="srctxt", rows="10", cols="50">
+    </textarea>
+    <br>
+    <button onclick="showHTML()">HTML 문서 출력하기</button>
+    <!-- <h3>DOM 객체 p의 프로퍼티, 스타일, 이벤트 리스너</h3>
+    <hr>
+    <p id="firstP", style="color:blue"
+        onclick="this.style.color='teal'">
+        이것은
+        <span id="span1" style="color:red">
+            문장입니다
+        </span>
+
+    </p>
+    <input type="button", value="스타일변경", onclick="f()">스크립트내 function 호출 -->
+    <!-- <script>
+        let p = document.getElementById("firstP");
+        let text = "p.id = " + p.id + "\n";
+        text += "p.tagname = " + p.tagName + "\n";
+        text += "p.innerHTML = " + p.innerHTML + "\n";
+        text += "p.stylecolor = " + p.style.color + "\n";
+        text += "p.onclick = " + p.onclick + "\n";
+        text += "p.chlidelementcount = " + p.childElementCount + "\n";
+        text += "너비 = " + p.offsetWidth + "\n";
+        text += "높이 = " + p.offsetHeight + "\n";
+
+        alert(text);
+    </script> -->
+</body>
+</html>

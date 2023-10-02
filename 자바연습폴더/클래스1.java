@@ -11,16 +11,13 @@ class car {
         this.color = color;
     }
     public String getmodel(){ // 메소드
-        return this.modelyear+"년식" + this.modelname + "" + this.color;
+        return this.modelyear+"년식" + this.modelname + " " + this.color;
     }
 }
 
 public class 클래스1 {
     public static void main(String[] args){
-        car c = new car(null, 0, null);
-        int a[][] = new int[3][3];
-        
-
-
+        car c = new car("k5", 2016, "blue");
+        System.out.println(c.getmodel());
     }
 }
