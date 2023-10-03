@@ -74,6 +74,5 @@ public class 연습19 {
         System.out.println(al6.get(0));
 
 
-
     }
 }

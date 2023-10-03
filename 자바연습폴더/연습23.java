@@ -15,6 +15,7 @@ public class 연습23 {
         } catch (Exception e) {
             System.out.println("잘못된 숫자입니다. 다시 실행해주세요.");
         } 
+        sc.close();
     }
     
 }

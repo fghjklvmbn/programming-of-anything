@@ -49,5 +49,7 @@ public class 연습22 {
             System.out.println("걸어간다.");
         }
 
+        sc.close();
+
     }
 }

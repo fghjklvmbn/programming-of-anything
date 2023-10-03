@@ -1,4 +1,4 @@
-//
+// 영상 영하 구분 프로그램
 
 import java.util.Scanner;
 

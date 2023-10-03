@@ -31,6 +31,6 @@ public class 연습11 {
                 break;
         }
 
-
+        sc.close();
     }
 }
