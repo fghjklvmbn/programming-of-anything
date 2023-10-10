@@ -5,8 +5,8 @@ class test {
 }
 public class park extends test {
     // 생성자
-    public int park(int a){
-        this.a = a;
+    public int park1(int b){
+        this.a = b;
         return a;
     }
     
