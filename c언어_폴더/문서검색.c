@@ -11,9 +11,8 @@ int main(){
     b = ;
     while (document!=EOF){
         document
-        if (search[a] == document[a])
-        {
-            /* code */
+        if (search[a] == document[a]){
+            
         }
         
     }
