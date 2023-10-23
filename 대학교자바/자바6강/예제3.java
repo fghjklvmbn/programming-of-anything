@@ -38,7 +38,7 @@ public class 예제3 {
         last = obj;
         obj = new line();
         last = obj;
-
+        System.out.println(last);
         shape p  = start;
         while(p!= null){
             p.draw();

@@ -27,5 +27,6 @@ public class 시험 {
         } else {
             System.out.println("점 ("+f1 +","+f2+")는 원 밖에 있다.");
         }
+        sc.close();
     }   
 }
