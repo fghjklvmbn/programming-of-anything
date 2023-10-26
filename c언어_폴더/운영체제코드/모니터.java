@@ -3,10 +3,11 @@
 package c언어_폴더.운영체제코드;
 
 class con {
-    boolean con = false; 
+    private boolean con = false; 
 }
 
-class status extends con{
+class status extends con {
+    this.con = con;
     private int balance = 10;
     private boolean busy = false;
     private boolean condition = con;
