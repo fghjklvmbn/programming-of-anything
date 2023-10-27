@@ -1,14 +1,16 @@
 package 대학교자바.자바8강;
 
-class Point1 extends point{
-    public Point1(int x, int y) {
-        super(x, y);
-        //TODO Auto-generated constructor stub
+class point {
+    private int x,y;
+    public point(int x, int y){
+        this.x = x;
+        this.y = y;
     }
     public String toString(){
         return "point(" + x + "," + y + ")";
     }
 }
+
 
 public class 예제4 {
     public static void main(String[] args) {
