@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "예제3",
+      "request": "launch",
+      "mainClass": "대학교자바.자바8강.예제3",
+      "projectName": "programming-of-anything_4a59d3e4"
+    },
+    {
+      "type": "java",
       "name": "예제2",
       "request": "launch",
       "mainClass": "대학교자바.자바8강.예제2",
