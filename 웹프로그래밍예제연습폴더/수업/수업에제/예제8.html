@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="예제8.js"></script>
+</head>
+<body onload="document.getElementById('name').focus()">
+    <h3>onfocus와 onblur</h3>
+    <hr>
+    <p>이름을 입력하지 않으면 다른 창으로 이동할 수 없습니다.</p>
+    <form>
+        이름 <input type="text" id="name" onblur="checkfiled(this)"><p>
+        학번 <input type="text">
+    </form>
+</body> 
+</html>
