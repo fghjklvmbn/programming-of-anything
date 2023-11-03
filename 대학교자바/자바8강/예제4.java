@@ -1,12 +1,8 @@
 package 대학교자바.자바8강;
 
 class Point1 extends point{
-    public Point1(int x, int y) {
-        super(x, y);
-        //TODO Auto-generated constructor stub
-    }
     public String toString(){
-        return "point(" + x + "," + y + ")";
+        
     }
 }
 
