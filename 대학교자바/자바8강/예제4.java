@@ -1,10 +1,15 @@
 package 대학교자바.자바8강;
 
+<<<<<<< HEAD
 class Point1 extends point{
+=======
+
+>>>>>>> e9a1f54f92bad354a78d3d65d8e3c07b6745d061
     public String toString(){
         
     }
 }
+
 
 public class 예제4 {
     public static void main(String[] args) {

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="예제6.js"></script>
+</head>
+<body onload="changeimage()">
+    <h3>onload으로 이미지 크기 출력</h3>
+    <hr>
+    <form>
+        <select id="sel" onchange="changeimage()">
+            <option value="apple.jpeg">사과
+            <option value="banana.jpeg">바나나
+        </select>
+        <span id="myspan">이미지 크기</span>
+    </form>
+    <p><img id="myimg" src="apple.jpeg" alt="."></p>
+</body> 
+</html>
