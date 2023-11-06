@@ -1,15 +1,19 @@
-let div = document.getElementById("div");
+let canvas = document.getElementById("myCanvas");
+let context = canvas.getContext("2d");
 
-function where (e){
-    let text = "버튼 = " + e.button + "<br>";
-    text += "(Scrrenx, Scrreny) = " + e.screenX + "," + e.screenY + "<br>";
-    text += "(cilentx, cilenty) = " + e.clientX + "," + e.clientY + "<br>";
-    text += "(offsetx, offsety) = " + e.offsetX + "," + e.offsetY + "<br>";
-    text += "(x, y) = " + e.x + "," + e.y + "\n";
-    div.innerHTML = text;
-}
+// context.beginPath();
+// context.strokeStyle = "blue";
+// context.moveTo(120, 20);
+// context.lineTo(20,50);
+// context.lineTo(150,120);
+// context.lineTo(120, 20);
+// context.stroke();
 
-function out(e){
-    let text = "대기";
-    div.innerHTML = text;
-}
+//
+context.beginPath();
+context.strokeStyle = "blue";
+context.moveTo(120, 20);
+context.lineTo(20,50);
+context.lineTo(150,120);
+context.closePath();
+context.stroke();
