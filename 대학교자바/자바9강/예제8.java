@@ -15,7 +15,8 @@ public class 예제8 {
         }
     }
     public static void main(String[] args) {
-        LinkedList<String> myList = new LinkedList<String>(); 						myList.add("트랜스포머");
+        LinkedList<String> myList = new LinkedList<String>(); 						
+        myList.add("트랜스포머");
 		myList.add("스타워즈");
 		myList.add("매트릭스");
 		myList.add(0,"터미네이터");
