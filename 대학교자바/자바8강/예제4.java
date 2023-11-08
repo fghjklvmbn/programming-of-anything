@@ -1,9 +1,5 @@
 package 대학교자바.자바8강;
 
-    public String toString(){
-        
-    }
-
 
 
 public class 예제4 {
