@@ -1,6 +1,12 @@
 package 대학교자바.자바8강;
 
-
+class point {
+    private int x, y;
+    public point(){
+        this.x = x;
+        this.y = y;
+    }
+}
 
 public class 예제4 {
     public static void main(String[] args) {
