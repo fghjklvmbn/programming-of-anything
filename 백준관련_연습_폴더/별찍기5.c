@@ -11,8 +11,7 @@ int main(){
             printf("*");
             if (j==i){
                 printf("\n");
-            }
-            
+            }  
         }
     }   
     return 0;
