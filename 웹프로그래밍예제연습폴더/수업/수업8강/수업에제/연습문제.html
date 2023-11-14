@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>폼으로 원호 그리기</h3>
+    <hr>
+    <form>
+        <table>
+            <tr>
+                <td><label>x <input id="x" type="number"></label></td>
+                <td><label>y <input id="y" type="number"></label></td><br>
+                <td><label>반지름 <input id="d" type="number"></label></td><td><label>방향 </label></td><br>
+                <td><label>시작각도 <input id="start" type="number"></label></td><td><label>끝각도 <input id="end" type="number"></label></td><br>
+                <td><label>선굵기 <input id="end" type="number"></label></td><td>선색 <input type="color"></td><br>
+                <td><button onclick="paint()">그리기</button></td><td><button onclick="clear()">지우기</button></td><br>
+            </tr>
+        </table>
+        <canvas height="500" width="500"></canvas>
+    </form> 
+    <script src="연습문제.js"></script>
+    
+</body>
+</html>
