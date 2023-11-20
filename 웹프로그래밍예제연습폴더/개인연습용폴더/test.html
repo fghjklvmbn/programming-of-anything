@@ -6,13 +6,19 @@
     <title>연습용 홈페이지</title>
 </head>
 <body>
-    <!--1순위-->
-    <script src="test.js"></script>
-    <br>
-    <!--2순위-->
+    <h3>테스트</h3>
+    <hr>
     <script>
-        let c = prompt("숫자를 입력해주세요 : ");
-        a1(parseInt(c));
+        let itemlist = ["라면", "계란", "물", "파"];
+        document.writeln("<ol type='A'>");
+        for(let i = 0; i<itemlist.length; i++){
+            document.writeln("<li>" + itemlist[i]);
+            document.writeln("<br>");
+        }
+        document.writeln("</ol>");
     </script>
+    <!-- <iframe>
+        <script src="test.js"></script>
+    </iframe> -->
 </body>
 </html>
