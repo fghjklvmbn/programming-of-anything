@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "예제1",
+      "request": "launch",
+      "mainClass": "대학교자바.자바11강.예제1",
+      "projectName": "programming-of-anything_4a59d3e4"
+    },
+    {
+      "type": "java",
+      "name": "asdf",
+      "request": "launch",
+      "mainClass": "대학교자바.자바11강.asdf",
+      "projectName": "programming-of-anything_4a59d3e4"
+    },
+    {
+      "type": "java",
+      "name": "예제1",
+      "request": "launch",
+      "mainClass": "대학교자바.자바10강.예제1",
+      "projectName": "programming-of-anything_4a59d3e4"
+    },
+    {
+      "type": "java",
       "name": "예제4",
       "request": "launch",
       "mainClass": "대학교자바.자바8강.예제4",

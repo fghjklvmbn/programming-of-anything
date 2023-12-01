@@ -1,31 +1,23 @@
 package 대학교자바.자바10강;
-import java.util.*;
-
-class point {
-    private int x, y;
-    public point(int x, int y){
-        this.x = x;
-        this.y = y;
-    }
-
-    public String toString(){
-        return "(" + x + "," + y + ")";
-    }
-}
+import java.io.*;
 
 public class 예제2 {
     public static void main(String[] args){
-        Vector<point> v = new Vector<point>();
+        InputStreamReader in = null;
+		FileInputStream fin = null;
+		try {
+			fin = new FileInputStream("c:\\Temp\\hangul.txt");
+			in = new InputStreamReader(fin, "MS949"); 
+			int c;
 
-        v.add(new point(2, 3));
-        v.add(new point(-5, 20));
-        v.add(new point(30, 8));
-
-        v.remove(1);
-
-        for(int i = 0; i<v.size(); i++){
-            point p = v.get(i); // POINT 호출
-            System.out.println(p);
-        }
+         System.out.println("인코딩 문자 집합은 " + in.getEncoding());
+			while ((c = in.read()) != -1) {
+				System.out.print((char)c);
+			}
+			in.close();
+			fin.close();
+		} catch (IOException e) {
+			System.out.println("입출력 오류");
+		}
     }
 }
