@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="예제11.js"></script>
+</head>
+<body onload="drawimage()">
+    <h3></h3>
+    <hr>
+    과일을 선택하면 이미지가 출력됩니다.<p>
+    <form>
+        <select id="frults" onchange="drawimage()">
+            <option value="apple.jpeg">사과
+            <option value="banana.jpeg" selected>바나나
+        </select>
+        <img id="frultimage" src="apple.jpeg" alt="">
+    </form>
+</body> 
+</html>
