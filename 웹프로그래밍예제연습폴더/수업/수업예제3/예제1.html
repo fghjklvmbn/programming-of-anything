@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방문 카운트 쿠키</title>
+    <script src="/웹프로그래밍예제연습폴더/수업/수업예제3/예제1.js"></script>
+</head>
+<body>
+    <script>
+        let username = GetCookie("username");
+        let count = GetCookie("count");
+        let expire = new Date();
+        if(username == null){
+            count == 0;
+            username = prompt("이름을 입력하시오");
+            if(username == null){
+                alert("이름을 다시 입력해주세요");
+                username == "아무개";
+            } else {
+                expire.setTime(expire.getTime() + (365 * 24 * 3600 * 1000));
+                SetCookie("username", username, expire);
+            }
+        }
+        count++;
+        expire.setTime(expire.getTime() + (365 * 24 * 3600 * 1000));
+        SetCookie("count", count, expire);
+        document.write("<p>어서오십시오. "+username+"님의 "+ count + "번쨰 방문을 환영합니다.");
+    </script>
+    
+</body>
+</html>
