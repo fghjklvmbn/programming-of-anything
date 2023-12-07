@@ -1,12 +1,15 @@
 const express = require('express');
 const server = express();
 
-const user = [
+const user1 = [
     {
     id : "asdf",
     email : "dsapoi881@gmail.com",
     tel : "010-2432-5382"
-    },
+    }
+];
+
+const user2 = [
     {
     id : "fjdksl",
     email : "fghjklvmbn@naver.com",
@@ -14,10 +17,14 @@ const user = [
     }
 ];
 
-server.get("/api/user", (req,res) => {
-    res.json(user);
+server.get("/api/user1", (req,res) => {
+    res.json(user1);
 });
 
-server.listen(3000, () => {
+server.get("/api/user2", (req,res) => {
+    res.json(user2);
+});
+
+server.listen(3100, () => {
     console.log("서버 실행중");
 });
