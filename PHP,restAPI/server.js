@@ -25,6 +25,6 @@ server.get("/api/user2", (req,res) => {
     res.json(user2);
 });
 
-server.listen(3100, () => {
+server.listen(3000, () => {
     console.log("서버 실행중");
 });
