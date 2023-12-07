@@ -1,3 +1,4 @@
+const e = require('express');
 const express = require('express');
 const server = express();
 
@@ -25,6 +26,26 @@ server.get("/api/user2", (req,res) => {
     res.json(user2);
 });
 
-server.listen(3000, () => {
+server.listen(3100, () => {
     console.log("서버 실행중");
 });
+
+
+function input(){
+    if(!sessionStorage){
+        console.log("세션스토리지가 지원되지 않습니다. 지원하는 브라우저로 접속해주세요.");
+        return ;
+    }
+    a = document.getElementById("asdf").value;
+    document.write(a);
+    sessionStorage.setItem(a);
+
+}
+function output(){
+    if(!sessionStorage){
+        console.log("세션스토리지가 지원되지 않습니다. 지원하는 브라우저로 접속해주세요.");
+        return ;
+    }
+    b = sessionStorage.getItem(a);
+    document.write(b);   
+}
