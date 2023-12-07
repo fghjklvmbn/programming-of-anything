@@ -30,6 +30,8 @@ server.listen(3100, () => {
     console.log("서버 실행중");
 });
 
+let c = document.getElementById("input");
+let d = document.getElementById("output");
 
 function input(){
     if(!sessionStorage){

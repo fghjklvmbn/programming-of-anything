@@ -10,8 +10,8 @@
     <p id="asdf">
         테스트 텍스트
     </p>
-    <button type="button" onclick="input()">테스트</button>
-    <button type="button" onclick="output()">테스트</button>
+    <button id="input" type="button" onclick="input()">입력</button>
+    <button id="output" type="button" onclick="output()">출력</button>
     <?php
         echo date("y-m-d");
     ?>
