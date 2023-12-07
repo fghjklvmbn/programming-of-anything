@@ -30,16 +30,13 @@ server.listen(3100, () => {
     console.log("서버 실행중");
 });
 
-let c = document.getElementById("input");
-let d = document.getElementById("output");
-
 function input(){
     if(!sessionStorage){
         console.log("세션스토리지가 지원되지 않습니다. 지원하는 브라우저로 접속해주세요.");
         return ;
     }
     a = document.getElementById("asdf").value;
-    document.write(a);
+    Document.write(a);
     sessionStorage.setItem(a);
 
 }
@@ -49,5 +46,5 @@ function output(){
         return ;
     }
     b = sessionStorage.getItem(a);
-    document.write(b);   
+    Document.write(b);
 }
