@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <title>로그인 페이지</title>
+    <script src="/각종프로젝트연습/프로젝트(시험)/로그인페이지/login.js"></script>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="" onsubmit="login()">
+                        <h2>로그인</h2>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input id="user_id" type="text" required>
+                            <label for="user_id">ID</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input id="user_pw" type="password", required>
+                            <label for="user_pw">PW</label>
+                        </div>
+                        <div class="forget">
+                            <label for="id_check"><a href="/각종프로젝트연습/프로젝트(시험)/계정찾기페이지/test1.html">아이디 혹은 비밀번호 찾기</a></label>
+                        </div>    
+                        <button>로그인</button>
+                    <div class="register">
+                        <p>계정이 없으신가요? <a href="/각종프로젝트연습/프로젝트(시험)/회원가입페이지/test.html">가입하기</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

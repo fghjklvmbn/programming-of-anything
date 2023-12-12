@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>회원가입 페이지</title>
+    <script src="/각종프로젝트연습/프로젝트(시험)/회원가입페이지/test.js"></script>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="/각종프로젝트연습/프로젝트(시험)/메인페이지/test.html" method="get" onsubmit="welcome()">
+                    <h2>회원가입</h2>
+                    <div class="inputbox">
+                        <ion-icon name="bag-outline"></ion-icon>
+                        <input id="ID" type="text", required>
+                        <label for="ID">아이디</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="bag-outline"></ion-icon>
+                        <input id="PW" type="password", required>
+                        <label for="PW">비밀번호</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="bag-outline"></ion-icon>
+                        <input id="PW_re" type="password", required>
+                        <label for="PW_re">비밀번호 재확인</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input id="email", type="email", required, autocomplete="email">
+                        <label for="email">이메일</label>
+                    </div>
+                    <div class="register">
+                        <p><a href="/각종프로젝트연습/프로젝트(시험)/메인페이지/test.html">홈페이지 돌아가기</a></p>
+                    </div>
+                    <input class="had" type="submit" value="다음">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
