@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "asdf",
+      "request": "launch",
+      "mainClass": "자바연습폴더.기타연습폴더.asdf",
+      "projectName": "Untitled_6a5519e4"
+    },
+    {
+      "type": "java",
       "name": "예제1",
       "request": "launch",
       "mainClass": "대학교자바.자바11강.예제1",
