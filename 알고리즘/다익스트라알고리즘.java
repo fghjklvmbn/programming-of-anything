@@ -1,7 +1,7 @@
 
 package 알고리즘;
 
-public class 다익스트라알고리즘 extends dijikstra {
+public class 다익스트라알고리즘{
     // 기초값 정하기
     static int num = 6;
     static int INF = 10000000;
@@ -55,12 +55,3 @@ public class 다익스트라알고리즘 extends dijikstra {
     }
 }
 
-
-/**
- * 
- *dijikstra
- */
-class dijikstra {
-
-
-}
