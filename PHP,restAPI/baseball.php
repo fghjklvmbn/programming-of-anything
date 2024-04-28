@@ -73,7 +73,7 @@
             }
         }
 
-        while($strike == 0 && $ball == 0){
+        while($strike == 3 && $ball == 0){
             echo "축하합니다! 승리하셨습니다!";
             echo "<form action='send.php'>";
             echo "<input type='submit' value='돌아가기'>";
