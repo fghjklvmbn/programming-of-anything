@@ -19,7 +19,7 @@
         echo "공백제거 : $result1\n";
         echo "반대 : $result2\n";
 
-
+        
     ?>
 </body>
 </html>
