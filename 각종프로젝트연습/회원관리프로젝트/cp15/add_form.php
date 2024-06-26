@@ -20,7 +20,7 @@
     <tr>
         <td width="20%" height="30" bgcolor="#FFFF99"><p align="right"> * 아이디 </p></td>
         <td width="80%"><input type="text" name="fuserid" id="fuserid" size="12" maxlength="12" onblur="if(fuserid.value!='') chk_id();">
-        <input type="text" name="button" value=" > 중복검사 < " onclick="chk_id();">
+        <input type="button" name="fuserid_re" value=" > 중복검사 < " onclick="chk_id();">
         <font size="2"> (영문과 숫자 12자리까지) </font>
 
     <script>
@@ -29,7 +29,7 @@
                 alert("아이디를 입력해야 검사할 수 있습니다");
                 user_form.fuserid.focus();
             } else {
-                window.open('id_chk.php?fuserid='+user_form.fuserid.value, 'IDwin', 'width=400, height=200');
+                window.open('id_chk.php?fuserid=' + user_form.fuserid.value, 'IDwin', 'width=400, height=200');
             }
         }
     </script>
@@ -92,6 +92,7 @@
         </script>
     </tr>
 
+    <!-- 성별 체크 -->
     <tr>
         <td width="20%" height="30" bgcolor="#FFFF99"><p align="right"> 성별 </p></td>
         <td width="80%">
@@ -100,7 +101,15 @@
         </td>
     </tr>
 
+    <!-- email -->
+    <tr>
+        <td width="20%" height="30" bgcolor="#FFFF99"><p align="right"> 성별 </p></td>
+        <td width="80%">
+            <input type="email" name="femail">
+        </td>
+    </tr>
 
+    <!-- 서브밋 버튼 / 초기화 버튼 -->
     <tr>
         <td width="696" height="50" colspan="2"><p align="center">
         <input type="submit" name="smt" value=" 가입하기 ">&nbsp;&nbsp;&nbsp;
