@@ -16,24 +16,57 @@
         </td>
     </tr>
 
-<!-- 아이디 -->
+    <!-- 아이디 -->
     <tr>
         <td width="20%" height="30" bgcolor="#FFFF99"><p align="right"> * 아이디 </p></td>
-        <td width="80%"><input type="text" name="fuserid" id="fuserid" size="12" maxlength="12" onblur="if(fuserid.value!='') chk_id();">
-        <input type="button" name="fuserid_re" value=" > 중복검사 < " onclick="chk_id();">
+        <td width="80%"><input type="text" name="fuserid" id="fuserid" size="12" 
+        maxlength="12" onblur="if(fuserid.value!='') chk_id();">
+        <input type="button" name="Button" value=" > 중복검사 < " onClick="chk_id();">
         <font size="2"> (영문과 숫자 12자리까지) </font>
 
-    <script>
-        function chk_id(){
-            if(user_form.fuserid.value=''){
-                alert("아이디를 입력해야 검사할 수 있습니다");
-                user_form.fuserid.focus();
-            } else {
-                window.open('id_chk.php?fuserid=' + user_form.fuserid.value, 'IDwin', 'width=400, height=200');
+        <script>
+            function chk_id(){
+                if(user_form.fuserid.value == ''){
+                    alert("아이디를 입력해야 검사할 수 있습니다");
+                    user_form.fuserid.focus();
+                } else {
+                    window.open('id_chk.php?fuserid='+user_form.fuserid.value,'IDwin','width=400,height=200');
+                }
             }
-        }
-    </script>
-    </td>
+
+            function chk_passwd(){
+                if(user_form.fpasswd.value != user_form.fpasswd_re.value){
+                    alert(" 비밀번호 입력 오류 \r\n -> 비밀번호를 다시 입력하세요.");
+                    user_form.fpasswd.value="";
+                    user_form.fpasswd_re.value="";
+                    user_form.fpasswd.focus();
+                    return false;
+                }
+            }
+
+            function chk_input(){
+                if(user_form.fuserid.value==""){
+                    alert("아이디를 입력해주세요.");
+                    user_form.fuserid.focus();
+                    return false;
+                } else if(user_form.fname.value==""){
+                    alert("이름을 입력해주세요.");
+                    user_form.fname.focus();
+                    return false;
+                } else if(user_form.fpasswd.value==""){
+                    alert("비밀번호를 입력해주세요.");
+                    user_form.fpasswd.focus();
+                    return false;
+                } else if(user_form.fpasswd_re.value==""){
+                    alert("비밀번호 확인란에 비밀번호를 다시 입력해주세요.");
+                    user_form.fpasswd_re.focus();
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        </script>
+        </td>
     </tr>
 
     <!-- 이름 -->
@@ -55,41 +88,6 @@
         <td width="20%" height="30" bgcolor="#FFFF99"><p align="right"> * 비밀번호 확인 </p></td>
         <td width="80%"><input type="password" name="fpasswd_re" id="fpasswd_re" size="13" maxlength="13" onblur="chk_passwd()">
         <font size="2"> (비밀번호와 똑같이 입력하세요.) </font></td>
-
-        <script>
-            function chk_passwd(){
-                if(user_form.fpasswd.value != user_form.fpasswd_re.value){
-                    alert(" 비밀번호 입력 오류 \r\n -> 비밀번호를 다시 입력하세요.");
-                    user_form.fpasswd.value="";
-                    user_form.fpasswd_re.value="";
-                    user_form.fpasswd.focus();
-                    return false;
-                }
-            }
-            // 20페이지부터
-
-            function chk_input(){
-                if(user_form.fuserid.value==""){
-                    alert("아이디를 입력해주세요.");
-                    user_form.fuserid.focus();
-                    return false;
-                } else if(user_form.fname.value==""){
-                    alert("이름를 입력해주세요.");
-                    user_form.fname.focus();
-                    return false;
-                } else if(user_form.fpasswd.value==""){
-                    alert("비밀번호를 입력해주세요.");
-                    user_form.fpasswd.focus();
-                    return false;
-                } else if(user_form.fpasswd_re.value==""){
-                    alert("비밀번호 확인란에 비밀번호를 다시 입력해주세요.");
-                    user_form.fpasswd_re.focus();
-                    return false;
-                } else {
-                    return true;
-                }
-            }
-        </script>
     </tr>
 
     <!-- 성별 체크 -->
@@ -101,9 +99,9 @@
         </td>
     </tr>
 
-    <!-- email -->
+    <!-- 이메일 -->
     <tr>
-        <td width="20%" height="30" bgcolor="#FFFF99"><p align="right"> 성별 </p></td>
+        <td width="20%" height="30" bgcolor="#FFFF99"><p align="right"> 이메일 </p></td>
         <td width="80%">
             <input type="email" name="femail">
         </td>
