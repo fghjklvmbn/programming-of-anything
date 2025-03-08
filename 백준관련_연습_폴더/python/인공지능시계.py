@@ -2,33 +2,33 @@
 time = input()
 second = int(input())
 
+# t = 첫번째줄 시간, second
+
+
 # 인풋으로 들어온 시간을 시간과 분으로 나누어 저장
 t_h, t_m, t_s = map(int, time.split())
 
 # 시
-h = t_h + second // 3600
+r_h = t_h + second // 3600
 
 # 분
-m = t_m + (second % 3600) // 60
+r_m = t_m + (second % 3600) // 60
 
 # 초
-s = t_s + second % 60
+r_s = t_s + second % 60
 
-if h > 24:
-        h == 0
 
-if s >= 60:
-        m += 1
-        s -= 60
+if r_s >= 60:
+        r_m += 1
+        r_s -= 60
 
-if m >= 60:
-        h += 1
-        if h >= 24:
-                h = 0
-        m -= 60
-    
+if r_m >= 60:
+    r_h += 1
+    r_m -= 60
+    if r_h >= 24:
+        r_h == 0 
 
-print(h, m, s)
+print(r_h, r_m, r_s)
 
 
 # if ( h <= 23 && h >= 1 && m+c <= 59) {
