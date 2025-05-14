@@ -1,0 +1,23 @@
+필수다운로드
+heidisql
+https://www.heidisql.com/
+xampp 
+https://www.apachefriends.org/
+
+참고자료
+http://jun.hansung.ac.kr/SWP/PHP/PHP%20MySQL%20Select.html
+https://opentutorials.org/course/3018/5113
+https://developer.mozilla.org/ko/docs/Learn/HTML
+https://www.w3schools.com/sql/default.asp
+https://www.mysqltutorial.org/mysql-sample-database.aspx/
+
+https://haksa.gwangju.ac.kr/~yslee/kdms/sample.zip
+https://haksa.gwangju.ac.kr/~yslee/kdms/mysql_sample_datebase.zip
+
+sql 파일 dump
+1. mysql_sample_database.zip 를 다운로드한다.
+2. C:\xampp\mysql\bin 에 압축을 해제하고 다음 명령어를 실행한다.
+윈도우키+R
+cmd 실행
+cd C:\xampp\mysql\bin (기본설치경로)
+mysql -u root -p < mysql_sample_database.sql
